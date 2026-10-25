@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=VSDCraft Linux
+Comment=Controller software for VSDinside Stream Dock N3
+Exec=python3 -m vsdcraft
+Icon=input-gaming
+Terminal=false
+Type=Application
+Categories=Utility;AudioVideo;Settings;
+StartupNotify=true

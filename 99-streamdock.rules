@@ -1,0 +1,16 @@
+# Udev rules for VSDinside / Mirabox / Ajazz Stream Dock N3 & M18
+# Allows non-root users in 'plugdev' or console session to read/write StreamDock devices over HID
+
+# VSDinside / Mirabox Stream Dock N3 (VID 0x5548)
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="5548", ATTRS{idProduct}=="1001", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="5548", ATTRS{idProduct}=="1002", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="5548", ATTRS{idProduct}=="1003", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="5548", ATTRS{idProduct}=="1000", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="5548", ATTRS{idProduct}=="1008", MODE="0666", TAG+="uaccess"
+
+# Stream Dock N3 / AKP03 Hardware Revision B (VID 0x6603)
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="6603", ATTRS{idProduct}=="1001", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="6603", ATTRS{idProduct}=="1002", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="6603", ATTRS{idProduct}=="1003", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="6603", ATTRS{idProduct}=="1005", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="6603", ATTRS{idProduct}=="1006", MODE="0666", TAG+="uaccess"
